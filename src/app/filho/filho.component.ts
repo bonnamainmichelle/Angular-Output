@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-filho',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filho.component.css'],
 })
 export class FilhoComponent implements OnInit {
+  @Output() changeNumber: EventEmitter<any> = new EventEmitter();
   constructor() {}
 
   ngOnInit() {}
-  handerClick() {}
+  handerClick() {
+    this.changeNumber.emit();
+  }
 }

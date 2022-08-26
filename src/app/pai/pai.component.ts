@@ -3,13 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-pai',
   templateUrl: './pai.component.html',
-  styleUrls: ['./pai.component.css']
+  styleUrls: ['./pai.component.css'],
 })
 export class PaiComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
+  onChangeNumber() {}
 }
