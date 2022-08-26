@@ -11,6 +11,6 @@ export class FilhoComponent implements OnInit {
 
   ngOnInit() {}
   handerClick() {
-    this.changeNumber.emit();
+    this.changeNumber.emit(); //mandando para o ar, só que o pai pega esse evento
   }
 }

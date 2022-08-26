@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pai.component.css'],
 })
 export class PaiComponent implements OnInit {
+  public _myNumber: number = 0;
   constructor() {}
 
   ngOnInit() {}
-  onChangeNumber() {}
+  onChangeNumber() {
+    //Pai pega o evento do ar que o filho enviou
+    this._myNumber = Math.floor(Math.random() * 10);
+
+  }
 }
