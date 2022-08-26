@@ -3,13 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-filho',
   templateUrl: './filho.component.html',
-  styleUrls: ['./filho.component.css']
+  styleUrls: ['./filho.component.css'],
 })
 export class FilhoComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
+  handerClick() {}
 }
